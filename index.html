@@ -1,0 +1,41 @@
+<script>
+
+    const times = [
+        {time:"Corinthians",torcida:10000000000, titulos:50000},
+        {time:"Bahia",torcida:10, titulos:5},
+        {time:"Real madrid",torcida:1, titulos:0},
+        {time:"Shadow Milk Cookie",torcida:0.003, titulos:0},
+        {time:"Mango Cookie",torcida:214, titulos:5},
+        {time:"Golden Chesse Cookie",torcida:3, titulos:0},
+        {time:"White Lily Cookie",torcida:4, titulos:9},
+        {time:"Eternal Sugar Cookie",torcida:0, titulos:60},
+        {time:"Dark Echances Cookie",torcida:67, titulos:69},
+
+    ]
+
+    // para fazer filtros e o filter
+
+    const maioresTorcidas = times.filter((t)=> t.torcida < 20)
+    console.log(maioresTorcidas)
+
+
+    // calculo de operação e o map
+
+    const dobrarTorcida = times.map((t)=> t.torcida * 2)
+    console.log(dobrarTorcida)
+
+    // para somar a quantidade de times
+
+    console.log(times.length)
+
+    // processar o tamanho da lista reduce
+
+    const tamanhoLista = times.reduce((i)=>i+1,0)
+    console.log(tamanhoLista)
+
+    //somar todas as torcidas numeros usando reduce
+
+    const somarTorcidas = times.reduce((soma, torcida)=>soma+torcida.torcida,0)
+    console.log(somarTorcidas)
+
+</script>
